@@ -12,5 +12,6 @@ pip install black, isort, pylint
 # Install dependencies
 pip install beautifulsoup4 requests 
 
-# Run script. Choose category (default to ``humor``)
+# Run script. 
+# Optional selection of category  (defaults to ``humor``)
 python3 main.py --category humor
