@@ -1,5 +1,7 @@
-__pycahce__/
+__pycache__/
 .Python
 env/
 .venv
+venv/
+ENV/
 .idea
