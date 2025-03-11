@@ -1,5 +1,5 @@
 __pycahce__/
 .Python
 env/
-*.venv/
-*.idea/
+.venv
+.idea
