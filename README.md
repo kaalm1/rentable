@@ -8,3 +8,6 @@ source .venv/bin/activate
 
 # Install dependencies
 pip install beautifulsoup4 requests
+
+# Run script
+python3 main.py
