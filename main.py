@@ -32,7 +32,7 @@ def get_book_details(book_url):
     soup = BeautifulSoup(response.text, "html.parser")
     upc = soup.find("th", text="UPC").find_next_sibling("td").text
     title = soup.find("h1").text
-    price = soup.find("p", class_="price_color").text
+    price = soup.find("p", class_="price_color").text.replace('Â', '')
     image_url = soup.find("img")["src"].replace("../..", BASE_URL)
 
     return {"upc": upc, "title": title, "price": price, "image_url": image_url}
