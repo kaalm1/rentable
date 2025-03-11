@@ -69,7 +69,6 @@ def scrape_books_by_category(category_name: str):
         else:
             category_url = None
 
-    print(json.dumps(books, indent=4, ensure_ascii=False))
     return books
 
 
@@ -84,7 +83,9 @@ def main():
         default="humor",
     )
     args = parser.parse_args()
-    scrape_books_by_category(args.category)
+    results = scrape_books_by_category(args.category)
+
+    print(json.dumps(results, indent=4, ensure_ascii=False))
 
 
 if __name__ == "__main__":
